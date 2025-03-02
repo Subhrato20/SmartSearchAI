@@ -2,8 +2,20 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Send, RefreshCcw, Zap, Sun, Eye } from 'lucide-react';
 import axios from 'axios';
 import './SmartSearch.css';
-import Card from './Card'; // Import the Card component
-import VoicePrompt from './VoicePrompt'; // Import the VoicePrompt component
+import Card from './Card';
+import VoicePrompt from './VoicePrompt';
+
+function mapProductItemsToCardSources(productItems) {
+  // Convert the JSON from {product_name, product_link} to the shape <Card /> expects
+  return productItems.map((item, index) => ({
+    id: index + 1,
+    title: item.product_name,          // e.g. "Internet Essentials"
+    url: item.product_link,           // e.g. "https://www.xfinity.com/learn..."
+    domain: new URL(item.product_link).hostname,
+    logo: "/api/placeholder/24/24",
+    brief: "This link was provided by the AI response."
+  }));
+}
 
 const SmartSearch = ({ onLoadChat }) => {
   const [messages, setMessages] = useState([]);
@@ -14,25 +26,23 @@ const SmartSearch = ({ onLoadChat }) => {
   const [chatId, setChatId] = useState(() => Date.now().toString());
 
   const chatMainRef = useRef(null);
-  const API_BASE_URL = 'http://localhost:3000/api/chat';
+  const API_BASE_URL = 'http://127.0.0.1:5000/get_product_suggestions';
 
-  // Save chat to localStorage whenever messages change
   useEffect(() => {
-    // Only save if there are messages
+    // Save chat to localStorage
     if (messages.length > 0) {
-      // Get existing chats from localStorage
       const existingChatsJSON = localStorage.getItem('chatHistory');
       const existingChats = existingChatsJSON ? JSON.parse(existingChatsJSON) : [];
       
-      // Generate a title based on the first user message
       let chatTitle = "New Chat";
       const firstUserMessage = messages.find(msg => msg.user);
       if (firstUserMessage) {
         chatTitle = firstUserMessage.text.substring(0, 25);
-        if (firstUserMessage.text.length > 25) chatTitle += "...";
+        if (firstUserMessage.text.length > 25) {
+          chatTitle += "...";
+        }
       }
       
-      // Create a chat object
       const chatToSave = {
         id: chatId,
         title: chatTitle,
@@ -40,24 +50,19 @@ const SmartSearch = ({ onLoadChat }) => {
         timestamp: new Date().toISOString()
       };
       
-      // Check if this chat already exists by ID
       const existingChatIndex = existingChats.findIndex(chat => chat.id === chatId);
       
       if (existingChatIndex !== -1) {
-        // Update the existing chat
         existingChats[existingChatIndex] = chatToSave;
       } else {
-        // Add new chat to beginning of array
         existingChats.unshift(chatToSave);
       }
       
-      // Limit to 10 chats to prevent localStorage from getting too full
       const limitedChats = existingChats.slice(0, 10);
       localStorage.setItem('chatHistory', JSON.stringify(limitedChats));
     }
   }, [messages, chatId]);
 
-  // Function to load a chat from history
   const loadChatFromHistory = (historyChatId) => {
     const existingChatsJSON = localStorage.getItem('chatHistory');
     if (existingChatsJSON) {
@@ -68,14 +73,13 @@ const SmartSearch = ({ onLoadChat }) => {
         setMessages(chatToLoad.messages);
         setChatId(chatToLoad.id);
         
-        // If there are bot messages, set the last one as current
         const lastBotMessage = [...chatToLoad.messages]
           .reverse()
           .find(msg => !msg.user);
           
         if (lastBotMessage) {
           setCurrentMessage(lastBotMessage.text);
-          setCharIndex(lastBotMessage.text.length); // Show full message immediately
+          setCharIndex(lastBotMessage.text.length);
         }
         
         return true;
@@ -84,63 +88,17 @@ const SmartSearch = ({ onLoadChat }) => {
     return false;
   };
 
-  // Make the loadChatFromHistory function available to parent components
   useEffect(() => {
     if (onLoadChat) {
       onLoadChat(loadChatFromHistory);
     }
   }, [onLoadChat]);
 
-  // Function to check if a message should show sources
-  const shouldShowSources = (messageText) => {
-    // List of keywords that indicate we should show sources
-    const sourceKeywords = [
-      'xfinity', 'internet', 'provider', 'faster', 'speed', 'connection',
-      'wifi', 'broadband', 'fiber', 'cable', 'service', 'plan', 'package'
-    ];
-    
-    const lowerText = messageText.toLowerCase();
-    
-    // Check if any of the keywords are in the message
-    return sourceKeywords.some(keyword => lowerText.includes(keyword));
-  };
-
-  // Hardcoded sample sources for development
-  const getSampleSources = () => {
-    return {
-      sources: [
-        {
-          id: 1,
-          title: "Xfinity Gigabit Internet",
-          url: "https://www.xfinity.com/learn/internet-service/gigabit",
-          domain: "xfinity.com",
-          logo: "/api/placeholder/24/24",
-          brief: "Up to 1,200 Mbps download speeds"
-        },
-        {
-          id: 2,
-          title: "Xfinity Internet Plans Comparison",
-          url: "https://www.xfinity.com/learn/internet-service",
-          domain: "xfinity.com",
-          logo: "/api/placeholder/24/24",
-          brief: "Compare different Xfinity internet plans"
-        },
-        {
-          id: 3,
-          title: "Is Xfinity Internet Worth It?",
-          url: "https://www.reviews.org/internet-service/xfinity-internet-review/",
-          domain: "reviews.org",
-          logo: "/api/placeholder/24/24",
-          brief: "Independent review of Xfinity internet service"
-        }
-      ],
-      additionalSources: 4
-    };
-  };
-
   const sendMessageToBackend = async (message) => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/send`, { message });
+      const response = await axios.post(API_BASE_URL, {
+        question: message
+      });
       return response.data;
     } catch (error) {
       console.error('Error sending message to backend:', error);
@@ -157,44 +115,40 @@ const SmartSearch = ({ onLoadChat }) => {
     setIsLoading(true);
 
     try {
-      const response = await sendMessageToBackend(messageText);
+      const data = await sendMessageToBackend(messageText);
+      // Expecting data:
+      // { ai_salesman_response: "...", product_items: [ { product_name, product_link }, ... ] }
       
-      // Check if we should show sources for this message
-      const showSources = shouldShowSources(messageText);
-      
-      // Get sample sources if needed
-      const sources = showSources ? getSampleSources() : null;
-      
-      // Create bot message with sources if applicable
-      const botMessage = { 
-        text: response.response, 
+      const botText = data.ai_salesman_response || "I'm not sure how to respond.";
+      const productItems = data.product_items || [];
+
+      // Convert product_items to the shape <Card /> uses
+      const mappedSources = mapProductItemsToCardSources(productItems);
+
+      const botMessage = {
+        text: botText,
         user: false,
-        showSources: showSources,
-        sources: sources
+        // store your dynamic sources here
+        sources: mappedSources,
       };
       
-      setMessages(prevMessages => [...prevMessages, botMessage]);
+      setMessages(prev => [...prev, botMessage]);
       setCurrentMessage(botMessage.text);
       setCharIndex(0);
     } catch (error) {
       console.error('Error in sendMessage:', error);
       const errorMessage = { text: "Sorry, I couldn't process that request.", user: false };
-      setMessages(prevMessages => [...prevMessages, errorMessage]);
+      setMessages(prev => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
     }
   };
 
-  const handleSuggestion = (suggestion) => {
-    sendMessage(suggestion);
-  };
-
   useEffect(() => {
     if (currentMessage && charIndex < currentMessage.length) {
       const timer = setTimeout(() => {
-        setCharIndex(prevIndex => prevIndex + 1);
+        setCharIndex(prev => prev + 1);
       }, 20);
-
       return () => clearTimeout(timer);
     }
   }, [currentMessage, charIndex]);
@@ -213,7 +167,6 @@ const SmartSearch = ({ onLoadChat }) => {
     setIsLoading(false);
     setCurrentMessage('');
     setCharIndex(0);
-    // Generate a new chatId for the next conversation
     setChatId(Date.now().toString());
     console.log('Chat refreshed');
   };
@@ -253,18 +206,19 @@ const SmartSearch = ({ onLoadChat }) => {
           <RefreshCcw size={24} />
         </button>
       </header>
+
       <main className="chat-main" ref={chatMainRef}>
         {messages.length === 0 ? (
           <div className="suggestion-buttons">
-            <button className="suggestion-button" onClick={() => handleSuggestion("Text inviting friend to wedding")}>
+            <button onClick={() => sendMessage("Text inviting friend to wedding")}>
               <Zap className="suggestion-icon" size={24} />
               <span>Text inviting friend to wedding</span>
             </button>
-            <button className="suggestion-button" onClick={() => handleSuggestion("Morning routine for productivity")}>
+            <button onClick={() => sendMessage("Morning routine for productivity")}>
               <Sun className="suggestion-icon" size={24} />
               <span>Morning routine for productivity</span>
             </button>
-            <button className="suggestion-button" onClick={() => handleSuggestion("Count the number of items in an image")}>
+            <button onClick={() => sendMessage("Count the number of items in an image")}>
               <Eye className="suggestion-icon" size={24} />
               <span>Count the number of items in an image</span>
             </button>
@@ -272,26 +226,24 @@ const SmartSearch = ({ onLoadChat }) => {
         ) : (
           <div className="message-list">
             {messages.map((message, index) => (
-              <div key={index} className={`message ${message.user ? 'user-message' : 'bot-message'}`}>
+              <div
+                key={index}
+                className={`message ${message.user ? 'user-message' : 'bot-message'}`}
+              >
                 {message.user ? (
-                  // User message - just show the text
                   formatMessage(message.text)
                 ) : (
-                  // Bot message - first sources (if applicable), then text
                   <div className="bot-message-content">
-                    {/* Show sources if this message has them and typing is complete */}
-                    {message.showSources && message.sources && 
-                     (index !== messages.length - 1 || displayedText === message.text) && (
+                    {message.sources && message.sources.length > 0 && (
                       <div className="sources-wrapper">
-                        <Card sources={message.sources.sources} />
+                        <Card sources={message.sources} />
                       </div>
                     )}
-                    
-                    {/* Bot message text */}
+
                     <div className="bot-text">
-                      {index === messages.length - 1 ? 
-                        formatMessage(displayedText) : 
-                        formatMessage(message.text)}
+                      {index === messages.length - 1
+                        ? formatMessage(displayedText)
+                        : formatMessage(message.text)}
                     </div>
                   </div>
                 )}
@@ -301,17 +253,18 @@ const SmartSearch = ({ onLoadChat }) => {
           </div>
         )}
       </main>
-      
-      {/* THIS IS THE PART THAT NEEDS TO BE REPLACED - START */}
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        backgroundColor: '#f5f5f5',
-        borderRadius: '20px',
-        padding: '0 6px',
-        marginTop: '10px',
-        height: '40px'
-      }}>
+
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          backgroundColor: '#f5f5f5',
+          borderRadius: '20px',
+          padding: '0 6px',
+          marginTop: '10px',
+          height: '40px'
+        }}
+      >
         <input
           type="text"
           value={input}
@@ -330,8 +283,8 @@ const SmartSearch = ({ onLoadChat }) => {
           disabled={isLoading}
         />
         <VoicePrompt onTranscript={sendMessage} disabled={isLoading} />
-        <button 
-          onClick={() => sendMessage(input)} 
+        <button
+          onClick={() => sendMessage(input)}
           disabled={isLoading}
           style={{
             border: 'none',
@@ -349,7 +302,6 @@ const SmartSearch = ({ onLoadChat }) => {
           <Send size={18} />
         </button>
       </div>
-      {/* THIS IS THE PART THAT NEEDS TO BE REPLACED - END */}
     </div>
   );
 };

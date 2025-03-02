@@ -6,6 +6,7 @@ import json
 import anthropic
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from RAG.milvus_search import search_documents_with_links
 
 load_dotenv()
@@ -15,6 +16,8 @@ def load_context(question: str):
     return search_documents_with_links(question)
 
 app = Flask(__name__)
+CORS(app)
+
 
 @app.route('/get_product_suggestions', methods=['POST'])
 def get_product_suggestions():
