@@ -4,8 +4,6 @@ body, html {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
 }
 
 .chat-container {
@@ -15,8 +13,6 @@ body, html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -36,10 +32,9 @@ body, html {
 }
 
 .refresh-button {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  position: fixed; /* Stays fixed on the screen */
+  top: 20px; /* Adjust this value to move it up/down */
+  right: 20px; /* Distance from the right edge */
   background-color: white;
   border: none;
   border-radius: 50%;
@@ -50,15 +45,18 @@ body, html {
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .refresh-button:hover {
-  transform: translateY(-50%) rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .refresh-button svg {
   color: black;
 }
+
+
 
 /* Chat Messages */
 .chat-main {
@@ -163,8 +161,6 @@ body, html {
 .chat-input-container {
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   max-width: 760px; /* Slightly less than chat-container to account for padding */
   background-color: white;
@@ -173,7 +169,21 @@ body, html {
   padding: 12px 20px;
   border-top: 1px solid #ddd;
   z-index: 10;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.chat-input-container {
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  width: 100%;
+  max-width: 760px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-top: 1px solid #ddd;
   box-sizing: border-box;
 }
 

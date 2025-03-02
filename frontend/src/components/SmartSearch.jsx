@@ -212,17 +212,17 @@ const SmartSearch = ({ onLoadChat }) => {
       <main className="chat-main" ref={chatMainRef}>
         {messages.length === 0 ? (
           <div className="suggestion-buttons">
-            <button onClick={() => sendMessage("Text inviting friend to wedding")} className="suggestion-button">
+            <button onClick={() => sendMessage("What is the most cost-effective Xfinity Internet plan for a household with four devices?​")} className="suggestion-button">
               <Zap className="suggestion-icon" size={24} />
-              <span>Text inviting friend to wedding</span>
+              <span>What is the most cost-effective Xfinity Internet plan for a household with four devices?​</span>
             </button>
-            <button onClick={() => sendMessage("Morning routine for productivity")} className="suggestion-button">
+            <button onClick={() => sendMessage("What are the differences between Xfinity's xFi Gateway and standard modems, and which is more suitable for high-speed Internet?")} className="suggestion-button">
               <Sun className="suggestion-icon" size={24} />
-              <span>Morning routine for productivity</span>
+              <span>What are the differences between Xfinity's xFi Gateway and standard modems, and which is more suitable for high-speed Internet?</span>
             </button>
-            <button onClick={() => sendMessage("Count the number of items in an image")} className="suggestion-button">
+            <button onClick={() => sendMessage("What is the best plan if I want to watch English Premier League?")} className="suggestion-button">
               <Eye className="suggestion-icon" size={24} />
-              <span>Count the number of items in an image</span>
+              <span>What is the best plan if I want to watch English Premier League?</span>
             </button>
           </div>
         ) : (

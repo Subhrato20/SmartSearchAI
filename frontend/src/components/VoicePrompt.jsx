@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import micIcon from '../assets/mic.svg'; // Make sure this path is correct
+import micIcon from '../assets/mic.svg';
 import './VoicePrompt.css';
 
 const VoicePrompt = ({ onTranscript, disabled }) => {
@@ -12,7 +12,6 @@ const VoicePrompt = ({ onTranscript, disabled }) => {
   const audioContextRef = useRef(null);
   const mediaStreamRef = useRef(null);
 
-  // Set up volume analyzer function - wrap in useCallback
   const setupVolumeAnalyzer = useCallback(async () => {
     try {
       audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
@@ -30,7 +29,6 @@ const VoicePrompt = ({ onTranscript, disabled }) => {
         const dataArray = new Uint8Array(analyserRef.current.frequencyBinCount);
         analyserRef.current.getByteFrequencyData(dataArray);
         
-        // Calculate volume level (0-100)
         const average = dataArray.reduce((a, b) => a + b, 0) / dataArray.length;
         setVolume(Math.min(100, average * 2.5));
         
@@ -39,120 +37,92 @@ const VoicePrompt = ({ onTranscript, disabled }) => {
       
       animationFrameRef.current = requestAnimationFrame(updateVolume);
     } catch (err) {
-      console.error("Error accessing microphone:", err);
-      setError("Could not access microphone. Please check permissions.");
+      console.error("Microphone access error:", err);
+      setError("Microphone access required. Please check permissions.");
       setIsListening(false);
     }
-  }, [isListening]); // Add isListening as dependency
+  }, [isListening]);
 
-  // Create toggleListening as a useCallback with setupVolumeAnalyzer in dependencies
   const toggleListening = useCallback(async () => {
-    if (error === "Speech recognition is not supported in this browser." || disabled) {
-      return;
-    }
-    
-    if (isListening) {
-      // Stop listening
-      if (recognitionRef.current) {
-        recognitionRef.current.stop();
-      }
-      if (mediaStreamRef.current) {
-        mediaStreamRef.current.getTracks().forEach(track => track.stop());
-      }
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
-      }
-      if (audioContextRef.current) {
-        audioContextRef.current.close();
-        audioContextRef.current = null;
-      }
-      
-      setVolume(0);
-    } else {
-      // Start listening
-      setError(null);
-      
-      try {
+    if (disabled || error) return;
+
+    try {
+      if (!isListening) {
         await setupVolumeAnalyzer();
-        if (recognitionRef.current) {
-          recognitionRef.current.start();
-        }
-      } catch (err) {
-        console.error("Error starting recognition:", err);
-        setError("Failed to start speech recognition.");
+        recognitionRef.current?.start();
+        console.log("Recognition started");
+      } else {
+        recognitionRef.current?.stop();
+        console.log("Recognition stopped");
+      }
+      setIsListening(!isListening);
+    } catch (err) {
+      console.error("Recognition error:", err);
+      setError("Failed to start voice recognition");
+    }
+  }, [isListening, disabled, error, setupVolumeAnalyzer]);
+
+  useEffect(() => {
+    const initRecognition = () => {
+      if (!('webkitSpeechRecognition' in window)) {
+        setError("Speech recognition not supported");
         return;
       }
-    }
-    
-    setIsListening(prev => !prev);
-  }, [isListening, error, disabled, setupVolumeAnalyzer]); // Added setupVolumeAnalyzer to dependencies
 
-  // Initialize speech recognition
-  useEffect(() => {
-    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const SpeechRecognition = window.webkitSpeechRecognition;
       recognitionRef.current = new SpeechRecognition();
       recognitionRef.current.continuous = true;
       recognitionRef.current.interimResults = true;
-      
+      recognitionRef.current.lang = 'en-US';
+
       recognitionRef.current.onresult = (event) => {
-        const current = event.resultIndex;
-        const transcriptText = event.results[current][0].transcript;
-        if (event.results[current].isFinal && onTranscript) {
-          onTranscript(transcriptText);
-          toggleListening(); // Stop listening after final result
+        const transcript = Array.from(event.results)
+          .map(result => result[0])
+          .map(result => result.transcript)
+          .join('');
+
+        console.log("Interim transcript:", transcript);
+
+        if (event.results[0].isFinal) {
+          console.log("Final transcript:", transcript);
+          onTranscript?.(transcript.trim());
+          toggleListening();
         }
       };
-      
+
       recognitionRef.current.onerror = (event) => {
-        console.error("Speech recognition error", event.error);
+        console.error("Recognition error:", event.error);
         setError(event.error);
         setIsListening(false);
       };
-      
-      recognitionRef.current.onend = () => {
-        if (isListening) {
-          recognitionRef.current.start();
-        }
-      };
-    } else {
-      setError("Speech recognition is not supported in this browser.");
-    }
-    
-    return () => {
-      if (recognitionRef.current) {
-        recognitionRef.current.stop();
-      }
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
-      }
-      if (audioContextRef.current) {
-        audioContextRef.current.close();
-      }
-      if (mediaStreamRef.current) {
-        mediaStreamRef.current.getTracks().forEach(track => track.stop());
-      }
     };
-  }, [onTranscript, toggleListening, isListening]);
+
+    initRecognition();
+
+    return () => {
+      recognitionRef.current?.stop();
+      mediaStreamRef.current?.getTracks().forEach(track => track.stop());
+      audioContextRef.current?.close();
+      cancelAnimationFrame(animationFrameRef.current);
+    };
+  }, [onTranscript, toggleListening]);
 
   return (
     <div className={`voice-prompt ${isListening ? 'active' : ''}`}>
+      {error && <div className="voice-error">{error}</div>}
       <button
         onClick={toggleListening}
-        disabled={error === "Speech recognition is not supported in this browser." || disabled}
+        disabled={!!error || disabled}
         className="voice-button"
         aria-label={isListening ? "Stop listening" : "Start listening"}
       >
         <div className="voice-icon-container">
-          {/* Ripple effects (visible when active) */}
           {isListening && (
             <>
               <div className="ripple ripple-1" style={{ opacity: volume / 300 + 0.2 }}></div>
               <div className="ripple ripple-2" style={{ opacity: volume / 400 + 0.1 }}></div>
             </>
           )}
-          
-          {/* Dynamic waveform dots */}
           {isListening && (
             <div className="waveform">
               {[...Array(4)].map((_, i) => (
@@ -167,12 +137,10 @@ const VoicePrompt = ({ onTranscript, disabled }) => {
               ))}
             </div>
           )}
-          
-          {/* Mic icon */}
           <img 
             src={micIcon} 
             alt="Microphone" 
-            className="mic-icon"
+            className={`mic-icon ${isListening ? 'pulsing' : ''}`}
           />
         </div>
       </button>
