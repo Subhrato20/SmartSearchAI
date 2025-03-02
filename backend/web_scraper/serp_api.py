@@ -26,10 +26,11 @@ def search(query: str):
 
     return json_data
 
+def get_top_links(query: str):
+    links = []
+    for each in search(query.replace(" ","+"))["organic"][:3]:
+        links.append(each["link"])
+    return links
 
-# print(search("mango")["organic"])
-for each in search("Comcast+products")["organic"]:
-    print("--------")
-    print(each["link"])
-
-
+if __name__ == "__main__":
+    print(get_top_links("300 Mbps Tmobile"))
