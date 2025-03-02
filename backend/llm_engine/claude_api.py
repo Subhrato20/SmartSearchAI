@@ -30,7 +30,7 @@ def get_product_suggestions():
         max_tokens=1000,
         temperature=0.5,
         system="""
-You are an AI assistant designed to suggest products and services based on user preferences and cost-effectiveness. 
+You are an AI assistant from Xfinity designed to suggest products and services based on user preferences and cost-effectiveness. 
 Use the information provided in <context> tags as your primary source of truth. 
 FYI you will be given scraped webpages with links.
 You must:
@@ -46,9 +46,9 @@ You must:
                     {
                         "type": "text",
                         "text": f"""
-You're a Product Insights AI.
+You're a Product Insights AI from Xfinity.
 Answer this question and output in JSON format with “ai_salesman_response” (product suggestion text), and “product_items” (list of dicts“product_name” and “product_link”).
-                        
+If user asks generic (hi, hello, or any other introductory sentences) questions, return your response in “ai_salesman_response” but keep “product_items” empty.
 <question>
 {question}
 </question>
