@@ -11,10 +11,10 @@ logger = logging.getLogger(__name__)
 MILVUS_URI = "http://localhost:19530"
 
 COLLECTIONS_CONFIG = {
-    "CCST_VDB": {
+    "Xfinity_VDB": {
         "dimension": 1024,
         "metric_type": "COSINE",
-        "partitions": ["TV_data", "Internet_data","Mobile_data","Home_Solution_data","Home_Phone_Data"]
+        "partitions": ["TV_data", "Internet_data","Mobile_data","Home_Solution_data","Home_Phone_data","MISC_data"]
     }
 } # type: ignore
 

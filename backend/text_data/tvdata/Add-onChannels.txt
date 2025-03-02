@@ -1,162 +1,249 @@
 https://www.xfinity.com/learn/digital-cable-tv/add-channels
 
-Add-on Channels
+# Add-on Channels
+
 Customize your TV experience
 
 Add channels to your Xfinity TV package with premium entertainment, sports, international programming, and On Demand subscriptions.
+
 Premium channels
 
 Experience STARZ, Paramount+ with SHOWTIME®, CINEMAX, THE MOVIE CHANNEL, EPIX, Max, and more. Watch live, On Demand, anytime.
 
-Explore Premium Channels
+[Explore Premium Channels](https://www.xfinity.com/learn/digital-cable-tv/premium-channels "Explore Premium Channels")
 
-House of the Dragon, Dune: Part Two, Friends, & more
-More on Max
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6966_hbo-q2-key-art-updates/premium-channel-page/hbo-logo-dt-mobile.png)\\
+\\
+**House of the Dragon, Dune: Part Two, Friends, & more**\\
+\\
+More on Max](https://www.xfinity.com/learn/digital-cable-tv/premium-channels/hbo)
 
-ddOnChannels_STARZ_Logo
-Outlander, P-Valley, BMF, Ghost, & more
-More on STARZ®
+[![ddOnChannels_STARZ_Logo](https://assets.xfinity.com/assets/dotcom/projects/cix-4395_starz_rebrand/LS-Video_AddOnChannels_STARZ_Logo.png)\\
+\\
+**Outlander, P-Valley, BMF, Ghost, & more**\\
+\\
+More on STARZ®](https://www.xfinity.com/learn/digital-cable-tv/premium-channels/starz)
 
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6332_showtime-rebrand/site-placements/add-on-channel-page/Showtime-Paramount-Logo-DT-Mobile.png)\\
+\\
+**The CHI, Halo, Yellowjackets, Billions & more**\\
+\\
+More on Paramount+ with SHOWTIME](https://www.xfinity.com/learn/digital-cable-tv/premium-channels/showtime)
 
-The CHI, Halo, Yellowjackets, Billions & more
-More on Paramount+ with SHOWTIME
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/New-Images-71017/AddOns-TIle-Lineup-Logo-Cinemax.png)\\
+\\
+**Trackers, Banshee, Warrior & more**\\
+\\
+More on CINEMAX®](https://www.xfinity.com/learn/digital-cable-tv/premium-channels/cinemax)
 
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6332_showtime-rebrand/site-placements/add-on-channel-page/Showtime-MovieChannel-Logo-DT-Mobile.png)\\
+\\
+**Everything Everywhere All At Once & More**\\
+\\
+More on THE MOVIE CHANNEL](https://www.xfinity.com/learn/digital-cable-tv/premium-channels/the-movie-channel)
 
-Trackers, Banshee, Warrior & more
-More on CINEMAX®
-
-
-Everything Everywhere All At Once & More
-More on THE MOVIE CHANNEL
-
-AddOnChannels_MGM_Logo
-Pennyworth, Britannia, Godfather of Harlem & more
-More on MGM +®
+[![AddOnChannels_MGM_Logo](https://assets.xfinity.com/assets/dotcom/projects/cix-4657_epix_rebrand_mgm_plus/LS-Video_AddOnChannels_MGM_Logo.png)\\
+\\
+**Pennyworth, Britannia, Godfather of Harlem & more**\\
+\\
+More on MGM +®](https://www.xfinity.com/learn/digital-cable-tv/premium-channels/mgm-plus)
 
 Sports packages
 
 Get all the sports you want and the action you crave, all in one place, with Xfinity sports subscriptions.
 
-Explore Sports Packages
-NFL
-Football
+[Explore Sports Packages](https://www.xfinity.com/learn/digital-cable-tv/sports)
 
-NBA
-Basketball
+[![NFL](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/Logo%20Update%20121217/AddOns-ImageGrid-Sports-NFL.jpg)\\
+\\
+Football](https://www.xfinity.com/learn/digital-cable-tv/sports/nfl "Football")
 
-College Sports
-College Sports
+[![NBA](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/Logo%20Update%20121217/AddOns-ImageGrid-Sports-NBA.jpg)\\
+\\
+Basketball](https://www.xfinity.com/learn/digital-cable-tv/sports/nba "Basketball")
 
-MLB Network
-Baseball
+[![College Sports](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/Logo%20Update%20121217/AddOns-ImageGrid-Sports-CollegeSports.jpg)\\
+\\
+College Sports](https://www.xfinity.com/learn/digital-cable-tv/sports/college "College Sports")
 
-Golf Channel
-Golf
+[![MLB Network](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/Logo%20Update%20121217/AddOns-ImageGrid-Sports-MLBNetwork.jpg)\\
+\\
+Baseball](https://www.xfinity.com/learn/digital-cable-tv/sports/mlb "Baseball")
 
-NHL Network
-Hockey
+[![Golf Channel](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/Logo%20Update%20121217/AddOns-ImageGrid-Golf-Channel.jpg)\\
+\\
+Golf](https://www.xfinity.com/learn/digital-cable-tv/sports/golf-channel "Golf")
 
-Nascar
-NASCAR
+[![NHL Network](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/Logo%20Update%20121217/AddOns-ImageGrid-Sports-NHLNetwork.jpg)\\
+\\
+Hockey](https://www.xfinity.com/learn/digital-cable-tv/sports/nhl/center-ice "Hockey")
 
-PPV
-Pay-Per-View
+[![Nascar](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/Logo%20Update%20121217/AddOns-ImageGrid-Sports-Nascar.jpg)\\
+\\
+NASCAR](https://www.xfinity.com/learn/digital-cable-tv/sports/nascar)
+
+[![PPV](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/Logo%20Update%20121217/AddOns-ImageGrid-Sports-PPV.jpg)\\
+\\
+Pay-Per-View](https://www.xfinity.com/learn/digital-cable-tv/sports/pay-per-view)
 
 International programming
 
 Select by language or area of the world that interests you
 
-Explore International Programming
+[Explore International Programming](https://www.xfinity.com/learn/digital-cable-tv/international)
+
 On Demand subscription packages
 
 With Subscription On Demand, get movies, music and special programming when you want. From Disney favorites to yoga and fitness classes from Gaia.
 
-Explore On Demand Packages
-AMC+
-AMC +
+[Explore On Demand Packages](https://www.xfinity.com/Corporate/Learn/DigitalCable/SVOD)
 
-OnDemandChannels ALLBLK LOGO
-ALLBLK
+[![AMC+](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/AMC/SVODLogoUpdateAMC.png)\\
+\\
+AMC +](https://www.xfinity.com/learn/digital-cable-tv/svod/amc-plus "AMC +")
 
-DSC logo
-Disney Story Central
+[![OnDemandChannels ALLBLK LOGO](https://assets.xfinity.com/assets/dotcom/projects/cix-3672_update-we-tvplus-to-allblk/LS-Video_OnDemandChannels_ALLBLK_LOGO.jpg)\\
+\\
+ALLBLK](https://www.xfinity.com/learn/digital-cable-tv/svod/allblk "ALLBLK")
 
-Streampix Logo
-Xfinity Streampix
+[![DSC logo](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/Logos/DSC_Logo_Blue_100x100.png)\\
+\\
+Disney Story Central](https://www.xfinity.com/learn/digital-cable-tv/svod/disneystorycentral "Disney Story Central")
 
+[![Streampix Logo](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/Streampix/streampix_logo_v3.png)\\
+\\
+Xfinity Streampix](https://www.xfinity.com/learn/digital-cable-tv/svod/streampix "Xfinity Streampix")
 
-Acorn TV
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6750_acorn-tv-updates/Acorn-Tile-Logo.png)\\
+\\
+Acorn TV](https://www.xfinity.com/learn/digital-cable-tv/svod/acorntv "Acorn TV")
 
-Fox Nation
-Fox Nation
+[![Fox Nation](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/Fox%20Nation/Fox%20Nation_Tile.png)\\
+\\
+Fox Nation](https://www.xfinity.com/learn/digital-cable-tv/svod/fox-nation "Fox Nation")
 
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/New-71717/AddOns-ImageGrid-OnDemand-SingrayKaraoke.png)\\
+\\
+Stingray Karaoke](https://www.xfinity.com/learn/digital-cable-tv/svod/stingray-karaoke "Stingray Karaoke")
 
-Stingray Karaoke
+[![Lifetime Movie Club Logo](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-ImageGrid-OnDemand-LifetimeMovie.png)\\
+\\
+Lifetime Movie Club](https://www.xfinity.com/learn/digital-cable-tv/svod/lifetime-movie-club "Lifetime Movie Club")
 
-Lifetime Movie Club Logo
-Lifetime Movie Club
+[![History Vault logo](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/AddOns-ImageGrid-OnDemand-HistoryVault.png)\\
+\\
+History Vault](https://www.xfinity.com/learn/digital-cable-tv/svod/history-vault "History Vault")
 
-History Vault logo
-History Vault
+[![HITZ logo](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/HITZ/Hitz_Tile_Logo.png)\\
+\\
+Hitz](https://www.xfinity.com/learn/digital-cable-tv/svod/hitz "Hitz")
 
-HITZ logo
-Hitz
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/New-71717/AddOns-ImageGrid-OnDemand-GaiamTV.png)\\
+\\
+Gaiam TV Fit & Yoga](https://www.xfinity.com/learn/digital-cable-tv/svod/gaiam-tv "Gaiam TV Fit & Yoga")
 
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-ImageGrid-OnDemand-Grokker.png)\\
+\\
+Grokker Yoga Fitness](https://www.xfinity.com/learn/digital-cable-tv/svod/grokker "Grokker Yoga Fitness")
 
-Gaiam TV Fit & Yoga
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/Logos/AddOns-ImageGrid-OnDemand-FitFusion.png)\\
+\\
+Fit Fusion](https://www.xfinity.com/fitfusion "Fit Fusion")
 
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-ImageGrid-OnDemand-Gaia.png)\\
+\\
+Gaia](https://www.xfinity.com/learn/digital-cable-tv/svod/gaia "Gaia")
 
-Grokker Yoga Fitness
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/New-71717/AddOns-ImageGrid-OnDemand-DogTV.png)\\
+\\
+Dog TV](https://www.xfinity.com/learn/digital-cable-tv/svod/dog-tv "Dog TV")
 
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-ImageGrid-OnDemand-HereTV.jpg)\\
+\\
+Here TV](https://www.xfinity.com/learn/digital-cable-tv/svod/here-tv "Here TV")
 
-Fit Fusion
+[![Curiosity Stream Logo](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/SVOD_CuriosityStream_Logo.png)\\
+\\
+CuriosityStream](https://www.xfinity.com/CuriosityStream "CuriosityStream")
 
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-ImageGrid-OnDemand-UP.png)\\
+\\
+Up Faith & Family](https://www.xfinity.com/learn/digital-cable-tv/svod/up-faith-family "Up Faith & Family")
 
-Gaia
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-ImageGrid-OnDemand-Anime.png)\\
+\\
+Anime Network](https://www.xfinity.com/learn/digital-cable-tv/svod/anime-network "Anime Network")
 
+[![KidStream Logo](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/Logos/AddOns-ImageGrid-OnDemand-KidStream.jpg)\\
+\\
+Kidstream](https://www.xfinity.com/kidstream "Kidstream")
 
-Dog TV
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/SVOD/Logos/AddOns-ImageGrid-OnDemand-TumbleBooksTV.jpg)\\
+\\
+TumbleBooksTV](https://www.xfinity.com/learn/digital-cable-tv/svod/tumblebookstv "TumbleBooksTV")
 
+[![Stingray Classica Logo](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-Tile-Lineup-Stingray%20Classica.png)\\
+\\
+Stingray Classica](https://www.xfinity.com/stingrayclassica "Stingray Classica")
 
-Here TV
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-ImageGrid-OnDemand-Filipino.png)\\
+\\
+Filipino](https://www.xfinity.com/learn/digital-cable-tv/international/filipino "Filipino")
 
-Curiosity Stream Logo
-CuriosityStream
+[![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-ImageGrid-OnDemand-Jewish.png)\\
+\\
+The Jewish Channel](https://www.xfinity.com/learn/digital-cable-tv/svod/jewish-channel "The Jewish Channel")
 
+![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/New-Images-71017/AddOns-Tabbed-1-Sports.jpg)
 
-Up Faith & Family
+## Add More, Get More
 
+## Add More, Get More
 
-Anime Network
-
-KidStream Logo
-Kidstream
-
-
-TumbleBooksTV
-
-Stingray Classica Logo
-Stingray Classica
-
-
-Filipino
-
-
-The Jewish Channel
-
-
-Add More, Get More
 Sports for real fans
+
+Sports
+
+[Hide](https://www.xfinity.com/learn/digital-cable-tv/add-channels#drawer_0a142c88-eb7a-4941-9fe4-d6357b05c1d5)
 
 Get 24/7 coverage on all major networks. Stream thousands of live games online. Follow your favorite teams no matter where you live with out-of-market packages. And never miss a moment with exclusive local-team On Demand coverage.
 
-Sports
+![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/X1/Free%20TV%20Week/PremiumChannels_Tabbed_HalfImage-GOT.jpg)
+
+## Add More, Get More
+
+## Add More, Get More
+
+Watch anywhere
+
 Premium
+
+[Show](https://www.xfinity.com/learn/digital-cable-tv/add-channels#drawer_f533a52d-578b-4f6a-9680-990ac20121c5)
+
+Here's five more reasons to never get off the couch: access to premium channels like STARZ®,  Paramount+ with SHOWTIME®, CINEMAX®, and The Movie Channel®, plus HBO Max™, which includes HBO Channels, On Demand, and streaming with the HBO Max app.
+
+![](https://assets.xfinity.com/assets/dotcom/learn/Images/www_xfinity_com/TV/Addons/AddOns-Tabbed-3-International.jpg)
+
+## Add More, Get More
+
+## Add More, Get More
+
+See the world with international programming
+
 International
 
-Already with Xfinity?
-Manage your services and discover new ways to stay connected, protected, and entertained.
-Sign in
-I'm new to Xfinity
-Shop XFINITY
-Build your plan
+[Show](https://www.xfinity.com/learn/digital-cable-tv/add-channels#drawer_e627fdac-1c4a-4a33-96b5-00a4bc1f6d5a)
+
+Feed your need for international intrigue with programming from places around the world. Keep up with international movies, top news, family favorites, hit soaps, and more.
+
+- [Sports](https://www.xfinity.com/learn/digital-cable-tv/add-channels#t-i-0-7793d732-0d30-4bde-b7b1-a543790e554b)
+- [Premium](https://www.xfinity.com/learn/digital-cable-tv/add-channels#t-i-1-7793d732-0d30-4bde-b7b1-a543790e554b)
+- [International](https://www.xfinity.com/learn/digital-cable-tv/add-channels#t-i-2-7793d732-0d30-4bde-b7b1-a543790e554b)
+
+## Shop XFINITY
+
+[Build your plan](https://www.xfinity.com/digital/offers/plan-builder "Build your plan")
+
+© 2025 Showtime Networks Inc., a Paramount Company. SHOWTIME and related marks are trademarks of Showtime Networks Inc. Paramount+ and related marks are trademarks of Paramount Pictures Corporation. Individual programs, devices and marks are the property of their respective owners. All Rights Reserved.
+
+Subscriptions required to access Netflix, Prime Video, Hulu, Paramount+ with SHOWTIME, and HBO®. Separate charges apply to On Demand and certain streaming services. Amazon, Prime Video and all related logos are trademarks of Amazon.com, Inc. or its affiliates. Max and related elements are property of Home Box Office, Inc. SHOWTIME and related marks are trademarks of Showtime Networks Inc. Paramount+ and related marks are trademarks of Paramount Pictures Corporation. Individual programs, devices and marks are the property of their respective owners. All Rights Reserved.

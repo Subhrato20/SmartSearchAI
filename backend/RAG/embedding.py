@@ -83,7 +83,8 @@ directories = [
     "../text_data/internet",
     "../text_data/mobile",
     "../text_data/home_solution",
-    "../text_data/home_phone"
+    "../text_data/home_phone",
+    "../text_data/misc"
 ]
 
 output_folder = "./processed"

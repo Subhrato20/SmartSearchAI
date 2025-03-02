@@ -1,93 +1,125 @@
 https://www.xfinity.com/learn/internet-service/modems-and-routers
 
-The all-in-one device for the ultimate connection
-The Xfinity Gateway acts as both a modem to receive internet signal and a router to deliver best-in-class WiFi to your devices.
-Shop internet
-Xfinity Gateway — more than just powerful WiFi
-Go ahead, connect your devices to our network
-Your home WiFi can handle all your smart devices at once.
-Learn about Xfinity Gateways
+[iframe](about:blank)
 
-Manage your home WiFi experience with the Xfinity app
-Get the Xfinity app
-Ultra-low lag WiFi to match your ultra-fast lifestyle
+## The all-in-one device for the ultimate connection
+
+The Xfinity Gateway acts as both a modem to receive internet signal and a router to deliver best-in-class WiFi to your devices.
+
+[Shop internet](https://www.xfinity.com/learn/internet-service "Shop internet")
+
+## Xfinity Gateway — more than just powerful WiFi
+
+## Go ahead, connect your devices to our network
+
+Your home WiFi can handle all your smart devices at once.
+
+[Learn about Xfinity Gateways](https://www.xfinity.com/support/articles/why-rent-wireless-gateway "Learn about Xfinity Gateways")
+
+![](https://assets.xfinity.com/assets/dotcom/projects_3/2025/feb/cix-8107_good-stuff-brand-refresh-internet-equipment/Icon_Mobile.png)
+
+## Manage your home WiFi experience with the Xfinity app
+
+[Get the Xfinity app](https://www.xfinity.com/apps "Get the Xfinity app")
+
+## Ultra-low lag WiFi to match your ultra-fast lifestyle
+
 Enjoy lower latency with gig speed internet or higher.
+
 Based on median latency of 13 milliseconds or below for Xfinity gigabit Internet customers with Xfinity Gateway as measured by Xfinity Speed Test.
-Serious security for the seriously online
-Suspicious files, phishing scams, risky sites — get Advanced Security that keeps your connections safe 
-at no extra fee with an Xfinity Gateway. 
-Explore Advanced Security
-Start shopping
-Xfinity Gateway Tech Specs
+
+## Serious security for the seriously online
+
+Suspicious files, phishing scams, risky sites — get Advanced Security that keeps your connections safe
+
+at no extra fee with an Xfinity Gateway.
+
+[Explore Advanced Security](https://www.xfinity.com/support/articles/getting-started-with-xfinity-xfi-advanced-security "Explore Advanced Security")
+
+[Start shopping](https://www.xfinity.com/planbuilder?localize=true "Start shopping")
+
+## Xfinity Gateway Tech Specs
+
+![](https://assets.xfinity.com/assets/dotcom/projects_3/2025/feb/cix-8107_good-stuff-brand-refresh-internet-equipment/Icon_Tri-band%20Wifi.png)
 
 Tri-Band WiFi
-• 2.4GHz, 5GHz, and 6Ghz
 
-• Higher maximum throughput
+• 2.4GHz, 5GHz, and 6Ghz
 
-• Less interference and fewer dead spots for faster speeds
+• Higher maximum throughput
 
-• A more reliable connection for improved streaming and gaming
+• Less interference and fewer dead spots for faster speeds
+
+• A more reliable connection for improved streaming and gaming
+
+![](https://assets.xfinity.com/assets/dotcom/projects_3/2025/feb/cix-8107_good-stuff-brand-refresh-internet-equipment/Icon_Home%20networking.png)
 
 Home networking
-• Connect computers, printers, and other devices, both wirelessly and with cables
 
-• Secure Xfinity WiFi hotspot for guests (no password needed)
+• Connect computers, printers, and other devices, both wirelessly and with cables
 
-• Gateway/network management tool for advanced users (http://10.0.0.1)
+• Secure Xfinity WiFi hotspot for guests (no password needed)
 
-• Battery backup capability (Xfinity Voice only)
+• Gateway/network management tool for advanced users (http://10.0.0.1)
 
-• Connect cordless phones and handsets (CAT-iq 2.0*)
+• Battery backup capability (Xfinity Voice only)
 
-• Telephone ports: 2
+• Connect cordless phones and handsets (CAT-iq 2.0\*)
 
+• Telephone ports: 2
+
+![](https://assets.xfinity.com/assets/dotcom/projects_3/2025/feb/cix-8107_good-stuff-brand-refresh-internet-equipment/Icon_And%20more_Router.png)
 
 And more...
-• Maximum data throughput: 2.5Gbps
 
-• Ethernet ports: Single 2.5Gbps, Three 1Gbps
+• Maximum data throughput: 2.5Gbps
 
-• DOCSIS 3.1 cable modem
+• Ethernet ports: Single 2.5Gbps, Three 1Gbps
 
-• Backwards compatible with non-WiFi 6E, WiFi 6, and WiFi 5-enabled devices or clients
+• DOCSIS 3.1 cable modem
 
+• Backwards compatible with non-WiFi 6E, WiFi 6, and WiFi 5-enabled devices or clients
 
-• Compatible with Xumo Stream Box from Xfinity
+• Compatible with Xumo Stream Box from Xfinity
 
-Expand your WiFi’s reach
- 
-
- 
-
- 
-
- 
+## Expand your WiFi’s reach
 
 WiFi Boost Pods
 
 WiFi Boost Pods help eliminate deadspots for more consistent coverage to keep you seamlessly connected throughout your home.
-Learn more
- 
 
- 
-
- 
-
- 
+[Learn more](https://www.xfinity.com/learn/internet-service/wifi/xfi-pod?intcmp=DMC:OTH:BAUP:ALL:GEN:GEN:COM:DIG:Tyl:42014201892 "Learn more")
 
 Storm-Ready WiFi
 
 Don’t let bad weather keep you down. Stay online during outages with unlimited cellular data and a Battery Backup with Storm-Ready WiFi.
-Learn more
-Our services work better together
 
-Internet
+[Learn more](https://www.xfinity.com/learn/internet-service/stormready "Learn more")
 
-Mobile
+## Our services work better together
 
-Entertainment
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6547_large-prices-on-homepage/internet-card-image-dt.png)\\
+\\
+Internet](https://www.xfinity.com/learn/internet-service "Internet")
 
-Home Security
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6547_large-prices-on-homepage/mobile-card-image-dt.png)\\
+\\
+Mobile](https://www.xfinity.com/learn/mobile "Mobile")
 
-Build your plan
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6547_large-prices-on-homepage/2-LOB-Entertainment-Hover-Tile-DT.png)\\
+\\
+Entertainment](https://www.xfinity.com/learn/digital-cable-tv "Entertainment")
+
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6547_large-prices-on-homepage/security-card-image-dt.png)\\
+\\
+Home Security](https://www.xfinity.com/learn/home-security "Home Security")
+
+[![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6547_large-prices-on-homepage/LOB-Build-Your-Plan-Hover-Tile-DT.png)\\
+\\
+Build your plan](https://www.xfinity.com/digital/offers/plan-builder?drawer=INTERNET "Build your plan")
+
+[iframe](https://polaris.xfinity.com/globalnav/orc.html?domain=www.xfinity.com&v=2025.01.0)OneTrust Cookie Banner
+
+Cookie Settings
+
+![](https://d.agkn.com/pixel/10533/?che=2444501926483.3423&aauid=undefined)![](https://www.facebook.com/tr?id=3570459783026493&ev=PageView&cd[order_id]=undefined)[iframe](https://servedby.flashtalking.com/container/12345;91797;9487;iframe/?U6=a3521b14-f224-4c16-95a2-5a9738cfe656&ft_referrer=https%3A//www.xfinity.com/learn/internet-service/modems-and-routers&ns=&cb=554702.7021159552)[iframe](//s.amazon-adsystem.com/iu3?d=generic&ex-fargs=%3Fid%3Dd48c76f0-9fe5-97cc-a67a-ffdab41f97ae%26type%3D5%26m%3D1&ex-fch=416613&ex-src=https://www.xfinity.com/learn/internet-service&ex-hargs=v%3D1.0%3Bc%3D8324316060801%3Bp%3DD48C76F0-9FE5-97CC-A67A-FFDAB41F97AE&cb=294738933381065900)

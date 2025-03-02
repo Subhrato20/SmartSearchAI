@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # Milvus Configuration
 MILVUS_URI = "http://localhost:19530"
-COLLECTION_NAME = "CCST_VDB"
+COLLECTION_NAME = "Xfinity_VDB"
 
 # Initialize Milvus client
 client = MilvusClient(uri=MILVUS_URI)

@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # Milvus connection settings
 MILVUS_URI = "http://localhost:19530"
-COLLECTION_NAME = "CCST_VDB"
+COLLECTION_NAME = "Xfinity_VDB"
 
 # Define partitions
 PARTITIONS = {
@@ -17,7 +17,8 @@ PARTITIONS = {
     "internet": "Internet_data",
     "mobile": "Mobile_data",
     "home_solution": "Home_Solution_data",
-    "home_phone": "Home_Phone_Data",
+    "home_phone": "Home_Phone_data",
+    "misc": "Misc_data"
 }
 
 # Initialize Milvus client
@@ -77,5 +78,5 @@ def process_json_files(json_directory):
             upsert_to_milvus(client, COLLECTION_NAME, partition_name, json_data)
 
 # Example Usage
-json_directory = "backend\RAG\processed"  # Update with the correct path where JSON files are stored
+json_directory = "../RAG/processed"
 process_json_files(json_directory)

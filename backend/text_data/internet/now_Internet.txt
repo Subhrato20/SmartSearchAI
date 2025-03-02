@@ -1,35 +1,85 @@
 https://www.xfinity.com/now/internet
 
-Skip to Main Content
-Sign in
+[iframe](about:blank)
+
+[Skip to Main Content](https://www.xfinity.com/now/internet#xc-header--skip)
+
+- [Xfinity Now](https://www.xfinity.com/now)
+- [Dismiss](https://www.xfinity.com/now)
+
+[Xfinity Now](https://www.xfinity.com/now "Xfinity Now")
+
+## Account
+
+## Services
+
+- [Overview](https://customer.xfinity.com/now)
+- [Plans](https://customer.xfinity.com/now/details)
+- [Payments](https://customer.xfinity.com/now/billing)
+- [Support](https://www.xfinity.com/support/now)
+- [Settings](https://customer.xfinity.com/now/settings)
+- [Internet](https://www.xfinity.com/now/internet)
+- [Mobile](https://www.xfinity.com/now/mobile)
+- [TV & Streaming](https://www.xfinity.com/now/tv-streaming)
+- [Deals](https://www.xfinity.com/now/mobile/deals)
+- [Xfinity](https://www.xfinity.com/)
+- [Internet](https://www.xfinity.com/now/internet)
+- [Mobile](https://www.xfinity.com/now/mobile)
+- [TV & Streaming](https://www.xfinity.com/now/tv-streaming)
+- [Deals](https://www.xfinity.com/now/mobile/deals)
+- [Xfinity](https://www.xfinity.com/)
+
+- Cart [Cart](https://www.xfinity.com/cart)
+- Cart [Cart](https://www.xfinity.com/cart)
+- [Sign out](https://oauth.xfinity.com/oauth/sp-logout?client_id=now-ui-prod&state=https%3A%2F%2Fwww.xfinity.com%2Fnow)
+- [Sign in](https://jss.xfinity.com/securelogin/cima?sc_site=dss-dotcom&continue=https%3A%2F%2Fcustomer.xfinity.com%2Fnow)
+
+BackBack
+
 Main Content
+
+![](https://www.xfinity.com/now/internet)
+
+![](https://assets.xfinity.com/assets/xfinityapps/now/Internet--hero.png)
+
 NOW INTERNET
 
-Live online for less. Starting at $30/mo.
+## Live online for less. Starting at $30/mo.
 
 One monthly price with taxes and fees included. No annual contracts. Just great internet with a consistent connection — backed by the Xfinity network.
 
-WiFi equipment included
-Unlimited data included
-Set up and self-install in minutes
-Flexibility to pause and resume your service
-Need temporary internet access? Try NOW WiFi pass for millions of WiFi hotspots on the go. Cancel anytime. Learn more
+- WiFi equipment included
+- Unlimited data included
+- Set up and self-install in minutes
+- Flexibility to pause and resume your service
 
+![](https://www.xfinity.com/now/internet)
 
-NOW TV & STREAMING
+![](https://www.xfinity.com/now/internet)
 
+Need temporary internet access? Try NOW WiFi pass for millions of WiFi hotspots on the go. Cancel anytime. **[Learn more](https://www.xfinity.com/learn/internet-service/wifi?intcmp=ILC:ACQ:BAUP:NON:GEN:NOWWFP:COM:DIG:dev:103014556171)**
 
+![](https://www.xfinity.com/now/internet)
 
+![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-7601_now-entertainment-cross-merchandising/StandaloneSite_halfImage_TVstreaming--mobile.jpg)
 
-Save on streaming. Enjoy live TV.
+NOW TV & Streaming
+
+## Save on streaming. Enjoy live TV.
 
 Sports. Reality. Must-see movies. Whatever you're into, you'll find it when you add TV and streaming to your NOW Internet. Save 40% on streaming subscriptions.
 
-Shop NOW TV & Streaming
-Pricing & other info
+[Shop NOW TV & Streaming](https://www.xfinity.com/now/tv-streaming)Pricing & other info
+
+![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6158_now-learn-page/InternetLOB_coolCalmConnected-mobile3.jpg)
+
 Cool. Calm.
+
 Connected.
-Better tech. Better than 5G home internet.
+
+## Better tech. Better than 5G home internet.
+
+![](https://assets.xfinity.com/assets/xfinityapps/now/now_logo.png)
 
 5G home internet
 
@@ -39,54 +89,94 @@ Low lag for smoother connections
 
 Reliable wired connection backed by the Xfinity network
 
+![](https://www.xfinity.com/now/internet)
+
+![](https://assets.xfinity.com/assets/dotcom/projects_2/cix-6158_now-learn-page/updated-mobile-ratio/Media-mobile2.png)
+
 PREPAID MOBILE
-Simple. Easy.
-Flexible.
+
+## Simple. Easy.  Flexible.
 
 No commitments. No credit checks. Exclusively for Xfinity or NOW Internet customers.
 
-Learn about NOW Mobile
-FAQ
-NOW Internet is a new prepaid high-speed home internet option backed by the reliable Xfinity network to give you a consistent connection at a great value. It’s perfect for those looking for a straightforward, prepaid internet option with no credit checks or long-term agreements. With NOW Internet, you get unlimited data and WiFi equipment that you don’t have to worry about returning. You can activate your service in minutes on the Xfinity app. 
+[Learn about NOW Mobile](https://www.xfinity.com/now/mobile)
+
+![](https://www.xfinity.com/now/internet)
+
+![](https://www.xfinity.com/now/internet)
+
+## FAQ
+
+NOW Internet is a new prepaid high-speed home internet option backed by the reliable Xfinity network to give you a consistent connection at a great value. It’s perfect for those looking for a straightforward, prepaid internet option with no credit checks or long-term agreements. With NOW Internet, you get unlimited data and WiFi equipment that you don’t have to worry about returning. You can activate your service in minutes on the Xfinity app.
 
 NOW Internet is also great for seasonal needs — like at the beach house or a rental property. Just turn off autopay, and your internet service and payments will pause until you turn it back on.
 
-For faster home internet speeds from 300 Mbps to 10 gigs, you can explore Xfinity Internet and other services like home security, entertainment, and home phones.
-Choose from two internet speeds: 100 Mbps for $30/month or 200 Mbps for $45/month. 100 Mbps is perfect for everyday use like downloading music and browsing social media. Get 200 Mbps for smoother streaming. Actual speeds vary and are not guaranteed. For factors affecting speed, visit xfinity.com/networkmanagement.
+For faster home internet speeds from 300 Mbps to 10 gigs, you can [explore Xfinity Internet](https://www.xfinity.com/learn/internet-service) and other services like home security, entertainment, and home phones.
+
+Choose from two internet speeds: 100 Mbps for $30/month or 200 Mbps for $45/month. 100 Mbps is perfect for everyday use like downloading music and browsing social media. Get 200 Mbps for smoother streaming. Actual speeds vary and are not guaranteed. For factors affecting speed, visit [xfinity.com/networkmanagement](http://www.xfinity.com/networkmanagement).
+
 You can instantly upgrade from 100 Mbps to 200 Mbps from the internet “Plans” page of your NOW account. And you can always upgrade to an Xfinity high-speed internet plan available in your area.
+
 NOW Internet speeds are fast enough for most home use, including streaming, gaming, and video calling on multiple devices at the same time.
 
 NOW Internet is delivered to your home on a wired connection. Unlike 5G home internet, NOW Internet provides consistent speeds with lower latency that don't vary based on capacity or time of day.
-Restrictions apply. Not available in all areas. Limited to NOW Internet service, speeds up to 200 Mbps/10 Mbps. Actual speeds vary and are not guaranteed. For factors affecting speed, visit xfinity.com/networkmanagement. Requires self-installation and activation of refurbished gateway. Payments must be made online only via credit, debit, or prepaid card. Autopay and paperless billing required. Pricing subject to change. Service limited to a single outlet and subject to Xfinity Residential Services Agreement (xfinity.com/policies). Xfinity 30-day money-back guarantee does not apply to service. Warranty/return information for NOW Internet equipment available at xfinity.com/support/articles/now-internet-faqs. NOW is a trademark of Comcast. © 2025 Comcast.
-About Us
-About Comcast
-Comcast Business
-Careers
-Press Room
-Corporate Site
-Advertise with Us
-Services
-Discover Xfinity
-Find Xfinity Stores
-Move to a new Address
-Service in my Area
-NOW TV & Streaming
-NOW WiFi Pass
-NOW Internet
-NOW Mobile
-Policies
-Customer Guarantee
-Customer Agreements and Policies
-Visitor Agreement
-Xfinity Internet Broadband Disclosures
-Privacy Center
-Social Responsibility
-English
-Español
-© 2025 Comcast
-Web Terms Of Service
-CA Notice at Collection
-Privacy Policy
-Your Privacy Choices
-Health Privacy Notice
-Ad Choices
+
+![](https://www.xfinity.com/now/internet)
+
+![](https://www.xfinity.com/now/internet)
+
+Restrictions apply. Not available in all areas. Limited to NOW Internet service, speeds up to 200 Mbps/10 Mbps. Actual speeds vary and are not guaranteed. For factors affecting speed, visit [xfinity.com/networkmanagement](http://www.xfinity.com/networkmanagement). Requires self-installation and activation of refurbished gateway. Payments must be made online only via credit, debit, or prepaid card. Autopay and paperless billing required. Pricing subject to change. Service limited to a single outlet and subject to Xfinity Residential Services Agreement ( [xfinity.com/policies](http://www.xfinity.com/policies)). Xfinity 30-day money-back guarantee does not apply to service. Warranty/return information for NOW Internet equipment available at [xfinity.com/support/articles/now-internet-faqs](https://www.xfinity.com/support/articles/now-internet-faqs). NOW is a trademark of Comcast. © 2025 Comcast.
+
+### About Us
+
+### About Us
+
+- [About Comcast](https://corporate.comcast.com/company)
+- [Comcast Business](https://business.comcast.com/)
+- [Careers](https://jobs.comcast.com/)
+- [Press Room](https://corporate.comcast.com/press)
+- [Corporate Site](https://corporate.comcast.com/)
+- [Advertise with Us](https://www.effectv.com/?utm_source=xfinity&utm_medium=referral&utm_campaign=advertise_with_us&utm_content=footer)
+
+### Services
+
+### Services
+
+- [Discover Xfinity](https://www.xfinity.com/hub)
+- [Find Xfinity Stores](https://www.xfinity.com/local/store-offers)
+- [Move to a new Address](https://www.xfinity.com/learn/moving)
+- [Service in my Area](https://www.xfinity.com/local/)
+- [NOW TV & Streaming](https://www.xfinity.com/now/tv-streaming)
+- [NOW WiFi Pass](https://www.xfinity.com/learn/internet-service/wifi)
+- [NOW Internet](https://www.xfinity.com/now/internet)
+- [NOW Mobile](https://www.xfinity.com/now/mobile)
+
+### Policies
+
+### Policies
+
+- [Customer Guarantee](https://corporate.comcast.com/hub/customer-experience)
+- [Customer Agreements and Policies](https://www.xfinity.com/policies)
+- [Visitor Agreement](https://www.xfinity.com/corporate/legal/visitoragreement)
+- [Xfinity Internet Broadband Disclosures](https://www.xfinity.com/policies/internet-broadband-disclosures)
+- [Privacy Center](https://www.xfinity.com/privacy)
+- [Social Responsibility](https://corporate.comcast.com/impact)
+
+- English
+- Español
+
+- [Twitter](https://twitter.com/XFINITY)
+- [Facebook](https://www.facebook.com/xfinity)
+- [YouTube](https://www.youtube.com/user/xfinity?feature=results_main0)
+
+- [Xfinity Now](https://www.xfinity.com/now "Xfinity Now")
+- © 2025 Comcast
+- [Web Terms Of Service](https://www.xfinity.com/terms)
+- [CA Notice at Collection](https://www.xfinity.com/privacy/policy/staterights#california)
+- [Privacy Policy](http://www.xfinity.com/privacy/policy)
+- [Your Privacy Choices](https://www.xfinity.com/privacy/manage-preference)
+- [Health Privacy Notice](https://www.xfinity.com/privacy/policy/staterights#washington)
+- [Ad Choices](https://www.xfinity.com/adinformation)
+- Cookie Preferences
+
+[iframe](https://polaris.xfinity.com/now/orc.html?domain=www.xfinity.com&v=2025.01.0)
