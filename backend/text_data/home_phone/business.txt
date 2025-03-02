@@ -1,0 +1,239 @@
+https://business.comcast.com/support/article/internet/comcast-business-cable-modem-device-compatibility
+
+XFINITY
+COMCAST BUSINESS
+SMALL BUSINESS
+ENTERPRISE SOLUTIONS
+PUBLIC SECTOR
+SUPPORT
+Sign In
+SUPPORT
+INTERNET
+USE APPROVED THIRD-PARTY EQUIPMENT FOR BUSINESS INTERNET
+Search Help and Support
+SEARCH
+Introduction
+Find out if your equipment is approved and compatible with Comcast Business services
+Identify approved retail devices
+Frequently Asked Questions
+Copy to clipboard
+Use approved third-party equipment for Business Internet
+Introduction
+
+Find out more about buying and using your own internet equipment (cable modem / gateway) instead of leasing a Comcast Business Gateway.
+
+Before making the decision to use your own equipment, find out what a Comcast Business Gateway has to offer, including coverage, features, speed and exclusive services.
+
+Find out if your equipment is approved and compatible with Comcast Business services
+Before buying your own equipment, you must first ensure the services you subscribe to are “Bring your Own” eligible. Certain Comcast business products and services are only available with equipment leased from Comcast Business. For certain Comcast Business products and services, you will be required to use Comcast Business equipment.
+
+
+Comcast Business Product	Comcast Modem / Device Eligible?	Bring Your Own Eligible?
+Internet Only	✓	Yes
+Internet with Static IP	✓	No
+Internet with Connection Pro	✓	No
+Internet with SmartOffice	✓	No
+Internet with WiFi Pro	✓	No
+Internet with SecurityEdge ™	✓	No
+Voice	✓	No
+
+
+
+Once you confirm that your Comcast Business service is “Bring your Own” eligible, use the tables below to easily check if your device is approved for Comcast Business Internet service.
+You can also use this table to make sure your modem or router supports your selected internet speed tier.
+After checking this website for approved retail devices, visit https://business.comcast.com/shop/gateway for up-to-date information on the internet speeds and other offers available in your area.
+
+Verify your speed tier by consulting your monthly Internet billing statement. Click here to see where this information is located on the bill.
+
+Identify approved retail devices
+
+Before buying a retail device through a third-party retailer, please review the below tables to better understand which devices are approved by Comcast. For more details, see the Frequently Asked Questions section.
+
+Every device listed below is either DOCSIS 3.0 or 3.1 and is IPv6 compatible.
+
+IMPORTANT: If you choose to purchase one of the below modems instead of leasing equipment from Comcast, it is important to understand that:
+
+Modem/gateway performance may degrade over time, and certain modems/gateways are not capable of handling higher speeds;
+The below devices can only achieve a maximum upload speed of 35 Mbps;
+Even if you purchase one of the modems identified below, Comcast cannot guarantee that you will achieve the Business Internet speeds to which you subscribe at all times. The “actual” speed that a customer will experience while using the service depends upon a variety of conditions, many of which are beyond the control of Comcast as an Internet service provider.
+
+If you choose to use a dual-function device with cable modem and Wi-Fi router in a single unit, you must lease a device from Comcast. If you are using your own purchased Wi-Fi router, you can use it in conjunction with an approved retail cable modem (listed below) or with a Comcast provided modem.
+
+Speeds up to 150 Mbps & Below*
+*Maximum upload speed of 35 Mbps
+Visit xfinity.com/support/devices/ to search for the device and view its details.
+
+
+Vendor	Model	Product Name
+Arris	SB6141 (Retail)	Retail SURFboard Cable Modem
+Arris	SB6183 (Retail)	Retail SURFboard Cable Modem
+Arris	SB6190 (Retail)	Retail SURFboard Cable Modem
+Arris	SB8200 (Retail)	Retail SURFboard Cable Modem
+Motorola	MB7220 (Retail)	Retail 8 X 4 Cable Modem
+Motorola	MB7420 (Retail)	Retail 16 X 4 Cable Modem
+Motorola	MB7621 (Retail)	Retail 24 X 8 Cable Modem
+Motorola	MB8600 (Retail)	Retail 32 X 8 Cable Modem
+Netgear	CM400 (Retail)	Netgear Retail Modem
+Netgear	CM500-100NAS (Retail)	Netgear Retail Cable Modem
+Netgear	CM600 (Retail)	Netgear Retail Cable Modem
+Netgear	CM700 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1000 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1100 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1200 (Retail)	Netgear Retail Cable Modem
+TP-Link	TC-7610 (Retail)	Retail Cable Modem
+TP-Link	TC-7620 (Retail)	Retail Cable Modem
+TP-Link	TC-7650 (Retail)	Retail Cable Modem
+Zoom Telephonics	5345 (Retail)	Retail Cable Modem
+Zoom Telephonics	5370 (Retail)	Retail Cable Modem
+
+ 
+
+Speeds up to 300 Mbps & Below*
+*Maximum upload speed of 35 Mbps
+Visit xfinity.com/support/devices/ to search for the device and view its details.
+
+
+Vendor	Model	Product Name
+Arris	SB6183 (Retail)	Retail SURFboard Cable Modem
+Arris	SB6190 (Retail)	Retail SURFboard Cable Modem
+Arris	SB8200 (Retail)	Retail SURFboard Cable Modem
+Motorola	MB7420 (Retail)	Retail 16 X 4 Cable Modem
+Motorola	MB7621 (Retail)	Retail 24 X 8 Cable Modem
+Motorola	MB8600 (Retail)	Retail 32 X 8 Cable Modem
+Netgear	CM500-100NAS (Retail)	Netgear Retail Cable Modem
+Netgear	CM600 (Retail)	Netgear Retail Cable Modem
+Netgear	CM700 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1000 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1100 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1200 (Retail)	Netgear Retail Cable Modem
+TP-Link	TC-7620 (Retail)	Retail Cable Modem
+TP-Link	TC-7650 (Retail)	Retail Cable Modem
+Zoom Telephonics	5370 (Retail)	Retail Cable Modem
+
+ 
+
+Speeds up to 800 Mbps & Below*
+*Maximum upload speed of 35 Mbps
+Visit xfinity.com/support/devices/ to search for the device and view its details.
+
+
+Vendor	Model	Product Name
+Arris	S33 (Retail)	Retail SURFboard Cable Modem
+Arris	SB8200 (Retail)	Retail SURFboard Cable Modem
+Arris	SB8200v2	SURFboard Cable Modem
+Hitron	CODA	Retail CODA Cable Modem
+HUMAX	HGD310 (Retail)	Retail 32 X 8 Cable Modem
+Motorola	MB8600 (Retail)	Retail 32 X 8 Cable Modem
+Motorola	MB8611 (Retail)	Retail 32 X 8 Cable Modem
+Netgear	CM1000 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1000v2 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1100 (Retail)	Netgear Retail Cable Modem
+Netgear	CM1200 (Retail)	Netgear Retail Cable Modem
+Netgear	CM2000 (Retail)	Netgear Retail Cable Modem
+
+ 
+
+Speeds up to 1.25 Gbps*
+*Maximum upload speed of 35 Mbps
+Visit xfinity.com/support/devices/ to search for the device and view its details.
+
+
+Vendor	Model	Product Name
+Arris	S33 (Retail)	Retail SURFboard Cable Modem
+Arris	S33v2	SURFboard Cable Modem
+Hitron	CODA56	Retail CODA Cable Modem
+Motorola	MB8611 (Retail)	Retail 32 X 8 Cable Modem
+Netgear	CM2000 (Retail)	Netgear Retail Cable Modem
+Netgear	CM3000 (Retail)	Netgear Retail Cable Modem
+Ubiquiti	UCI	Ubiquiti Unifi Cable Modem
+
+Note: Not all speed tiers listed above are currently available for sale. For details on our latest offers, please visit the Business Internet product page.
+
+Frequently Asked Questions
+
+Can I bring my own equipment to Comcast?
+
+You can purchase your own retail modem for use with your Business Internet service, as long as the equipment is certified to work on our network, and your service is “Bring Your Own” eligible. Before buying from the retailer of your choice, please reference the tables above to find certified retail equipment that supports your internet speed tier.
+
+If you're an existing customer and need to know your level of service, see which level of service you subscribe to. Then, after buying compatible retail equipment, install and activate it and start enjoying your service.
+
+What are my responsibilities when buying and using my own equipment with Comcast Business service?
+
+You're responsible for making sure your retail device is secure and certified, that it supports your Comcast Business Internet service speed, and for upgrading your equipment when we increase speeds. We recommend that you stay aware of new developments in technology to better understand when replacing your retail device may be necessary.
+
+You'll be responsible for troubleshooting device-related issues using the manufacturer's user manual if we've confirmed that your Comcast Business Internet service is functioning properly. You'll also be responsible for configuring your wireless network's security settings, if applicable.
+
+What does it mean if my equipment isn't supported, and how do I check if a piece of equipment isn't supported?
+
+If a device isn't supported, it's not certified for use on our network and won't be activated as new or replacement equipment. You can check if a piece of equipment isn't supported using the tables above.
+
+As new technology emerges, older devices become obsolete and will not work with new features or deliver subscribed Internet speeds. These older devices are deemed to be at the end of their useful life which means we no longer install the device and recommend that customers do not purchase these devices, whether new or used.
+
+Reference this table to see if your modem is an end-of-life device and not recommended for use.
+
+Starter Speed Tier
+Vendor	Model	Product Name
+SMC Networks	SMC8013WG-ADC	SMC EZ Connect Wireless Cable Modem Gateway
+SMC Networks	SMC8013WG-ADR	SMC EZ Connect Wireless Cable Modem Gateway
+SMC Networks	SMC8013WG-CCR	SMC EZ Connect Wireless Cable Modem Gateway
+SMC Networks	SMC8014WG-CCR	SMC EZ Connect Cable Modem Gateway
+
+ 
+
+What should I do if my older retail equipment isn't supported?
+
+To get the most out of your service, you should consider replacing your retail equipment if it has been identified as not supported. You have the option to replace your older retail device by leasing a wireless gateway, or by purchasing a certified and compatible device listed above. To learn more about the Comcast Business Wireless Gateway, see Overview of the Business Wireless Gateway and Comcast Business Router.
+
+Was this article helpful?
+YES
+NO
+Tags:
+EQUIPMENT
+Related Resources
+Download Norton Internet Security Online
+Troubleshoot Internet connectivity
+
+Not quite what you were looking for?
+
+CONTACT US
+SMALL BUSINESS
+Plans and Pricing
+Business Internet
+Mobile
+Phone
+Business TV
+Cloud Apps
+SUPPORT
+Comcast Business Support
+Forums
+Find an Xfinity Store
+MY ACCOUNT
+Sign In
+Cloud Solutions
+ABOUT US
+Why Comcast
+Our Network
+Press Releases
+Advertising
+Comcast Business Promise
+Careers
+Awards and Recognition
+Comcast Diversity, Equity, and Inclusion
+Comcast RISE
+PARTNERS AND REFERRALS
+Customer Referrals
+Authorized Connectors
+Solutions Advisors
+Alliance Associations
+Contact Us
+Community
+Privacy Policy
+Your Privacy Choices
+Notice at Collection
+Visitor Agreement
+Terms & Conditions
+Sitemap
+Open Source
+Broadband Labels
+©2025 Comcast Corporation. All Rights Reserved
+Cookie Preferences
