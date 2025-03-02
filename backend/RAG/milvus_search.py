@@ -1,10 +1,9 @@
-import json
 import torch
 import logging
 from transformers import AutoTokenizer, AutoModel, BertForSequenceClassification
 from pymilvus import MilvusClient
 
-# Configure logger
+# Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
@@ -24,18 +23,6 @@ reranker_tokenizer = AutoTokenizer.from_pretrained('huawei-noah/TinyBERT_General
 reranker_model = BertForSequenceClassification.from_pretrained('cross-encoder/ms-marco-TinyBERT-L-6')
 reranker_model.eval()
 
-def get_partitions(client, collection_name):
-    """Fetches available partitions in the Milvus collection."""
-    try:
-        partitions = client.list_partitions(collection_name=collection_name)
-        partition_names = [p["name"] for p in partitions]
-        if not partition_names:
-            logger.warning(f"No partitions found in collection '{collection_name}'. Searching entire collection.")
-        return partition_names if partition_names else None  # Return None if no partitions exist
-    except Exception as e:
-        logger.error(f"Failed to retrieve partitions: {e}")
-        return None
-
 def generate_embedding(text):
     """Generates an embedding vector for a given text using BAAI/bge-large-en-v1.5."""
     inputs = embedding_tokenizer(text, return_tensors='pt', truncation=True, max_length=512)
@@ -48,33 +35,24 @@ def search_documents(question, client, collection_name=COLLECTION_NAME, limit=10
     
     query_vector = generate_embedding(question)
 
-    # Retrieve available partitions (if any)
-    partitions = get_partitions(client, collection_name)
-
-    # Perform the search in Milvus
+    # Perform the search in Milvus without specifying partitions
     try:
-        search_params = {
-            "collection_name": collection_name,
-            "data": [query_vector],
-            "limit": limit,
-            "output_fields": ["metadata", "text"],
-        }
-
-        # Add partition names only if they exist
-        if partitions:
-            search_params["partition_names"] = partitions
-
-        res = client.search(**search_params)
+        res = client.search(
+            collection_name=collection_name,
+            data=[query_vector],
+            limit=limit,
+            output_fields=["url", "text"]  # ✅ Ensure URL is retrieved
+        )
 
     except Exception as e:
         logger.error(f"Milvus search failed: {e}")
         return [], []
 
-    # Extract search results
+    # Extract search results including URLs
     search_results = []
     for hit in res[0]:  
         search_results.append({
-            "metadata": hit.get("entity", {}).get("metadata", {}),
+            "url": hit.get("entity", {}).get("url", ""),
             "text": hit.get("entity", {}).get("text", "")
         })
 
@@ -108,9 +86,9 @@ def rerank_results(question, search_results):
 
 
 if __name__ == "__main__":
-    query = "Tell me about Latino TV Packages"
+    query = "Tell me about Latino TV Package"
     results = search_documents(query, client)
 
     # Print the top reranked results
     for idx, result in enumerate(results[:5]):
-        print(f"\nRank {idx+1}: {result['text']}\nMetadata: {result['metadata']}")
+        print(f"\nRank {idx+1}: \n Source: {result['url']}\n\n Text_in_Website:\n {result['text']}")
