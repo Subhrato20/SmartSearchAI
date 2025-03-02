@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/subhratosom/ComcastHackathon/backend/RAG/text_data/tv_data/https:",
+      "program": "/Users/subhratosom/ComcastHackathon/backend/RAG/text_data/tv_data/https:/build/Debug/outDebug"
+    }
+  ]
+}
