@@ -2,3 +2,88 @@
 venv
 .vscode
 __pycache__
+
+
+# Node.js dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lockb
+
+# Build output
+dist/
+build/
+.cache/
+out/
+.next/
+.vercel/
+.vite/
+.temp/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+bun-debug.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Lint and formatting
+.eslintcache
+.stylelintcache
+.prettierignore
+
+# TypeScript build files
+*.tsbuildinfo
+
+# Testing-related files
+coverage/
+jest-cache/
+jest.config.js
+cypress/screenshots/
+cypress/videos/
+
+# Storybook
+.storybook/
+.stories.mdx
+.stories.tsx
+.story.tsx
+.story.mdx
+
+# Miscellaneous
+*.lock
+*.bak
+*.old
+*.swp
+*.swn
+*.swo
+*.map
+
+# Deployment
+firebase.json
+.vercel
+.netlify
+.serverless/
