@@ -204,7 +204,7 @@ const SmartSearch = ({ onLoadChat }) => {
   return (
     <div className="chat-container">
       <header className="chat-header">
-        <h1>SmartSearch.ai</h1>
+        <h1>Xfinity SmartSearch.ai</h1>
         <button onClick={handleRefresh} className="refresh-button" aria-label="Refresh chat">
           <RefreshCcw size={24} />
         </button>
