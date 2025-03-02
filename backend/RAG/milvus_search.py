@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # Milvus Configuration
 MILVUS_URI = "http://localhost:19530"
-COLLECTION_NAME = "CCST"
+COLLECTION_NAME = "CCST_VDB"
 
 # Initialize Milvus client
 client = MilvusClient(uri=MILVUS_URI)
@@ -86,7 +86,7 @@ def rerank_results(question, search_results):
 
 
 if __name__ == "__main__":
-    query = "Tell me about Latino TV Package"
+    query = "Tell me about NOW Deals"
     results = search_documents(query, client)
 
     # Print the top reranked results
