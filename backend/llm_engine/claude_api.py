@@ -1,17 +1,18 @@
-import re
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 import json
-import os
-import requests
 import anthropic
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
+from RAG.milvus_search import search_documents_with_links
 
 load_dotenv()
 client = anthropic.Anthropic()
 
-def load_context():
-    with open("backend/llm_engine/temp_context.txt", "r", encoding='utf-8') as f:
-        return f.read()
+def load_context(question: str):
+    return search_documents_with_links(question)
 
 app = Flask(__name__)
 
@@ -23,7 +24,7 @@ def get_product_suggestions():
     if not question:
         return jsonify({"error": "Missing 'question' in request body"}), 400
     
-    context = load_context()
+    context = load_context(question)
     
     message = client.messages.create(
         model="claude-3-7-sonnet-20250219",

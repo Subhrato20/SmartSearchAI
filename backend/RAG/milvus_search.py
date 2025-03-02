@@ -30,7 +30,7 @@ def generate_embedding(text):
         outputs = embedding_model(**inputs)
     return outputs.last_hidden_state.mean(dim=1).squeeze().tolist()
 
-def search_documents(question, client, collection_name=COLLECTION_NAME, limit=10):
+def search_documents(question, client, collection_name=COLLECTION_NAME, limit=6):
     """Searches for relevant documents in Milvus using embeddings and re-ranks the results."""
     
     query_vector = generate_embedding(question)
@@ -84,11 +84,17 @@ def rerank_results(question, search_results):
     
     return [item[1] for item in sorted_results]
 
-
-if __name__ == "__main__":
-    query = "Tell me about NOW Deals"
+def search_documents_with_links(query):
     results = search_documents(query, client)
+    context = ""
 
     # Print the top reranked results
     for idx, result in enumerate(results[:5]):
-        print(f"\nRank {idx+1}: \n Source: {result['url']}\n\n Text_in_Website:\n {result['text']}")
+        context += f"<webpage {idx+1}>\n"
+        context += f"link: {result['url']}\n\n webpage_content:\n {result['text']}\n"
+        context += f"</webpage {idx+1}>\n\n\n\n\n"
+    
+    return context
+
+if __name__ == "__main__":
+    print(search_documents_with_links("Help me find an unlimited data plan for my iPhone for as low as possible"))

@@ -77,5 +77,5 @@ def process_json_files(json_directory):
             upsert_to_milvus(client, COLLECTION_NAME, partition_name, json_data)
 
 # Example Usage
-json_directory = "./processed"  # Update with the correct path where JSON files are stored
+json_directory = "backend\RAG\processed"  # Update with the correct path where JSON files are stored
 process_json_files(json_directory)
