@@ -6,15 +6,17 @@ import Card from './Card';
 import VoicePrompt from './VoicePrompt';
 
 function mapProductItemsToCardSources(productItems) {
-  // Convert the JSON from {product_name, product_link} to the shape <Card /> expects
-  return productItems.map((item, index) => ({
-    id: index + 1,
-    title: item.product_name,          // e.g. "Internet Essentials"
-    url: item.product_link,           // e.g. "https://www.xfinity.com/learn..."
-    domain: new URL(item.product_link).hostname,
-    logo: "/api/placeholder/24/24",
-    brief: "This link was provided by the AI response."
-  }));
+  return productItems.map((item, index) => {
+    const domain = new URL(item.product_link).hostname;
+    
+    return {
+      id: index + 1,
+      title: item.product_name,
+      url: item.product_link,
+      domain: domain,
+      logo: `https://www.google.com/s2/favicons?domain=${domain}&sz=32`, // Get favicon dynamically
+    };
+  });
 }
 
 const SmartSearch = ({ onLoadChat }) => {
@@ -210,15 +212,15 @@ const SmartSearch = ({ onLoadChat }) => {
       <main className="chat-main" ref={chatMainRef}>
         {messages.length === 0 ? (
           <div className="suggestion-buttons">
-            <button onClick={() => sendMessage("Text inviting friend to wedding")}>
+            <button onClick={() => sendMessage("Text inviting friend to wedding")} className="suggestion-button">
               <Zap className="suggestion-icon" size={24} />
               <span>Text inviting friend to wedding</span>
             </button>
-            <button onClick={() => sendMessage("Morning routine for productivity")}>
+            <button onClick={() => sendMessage("Morning routine for productivity")} className="suggestion-button">
               <Sun className="suggestion-icon" size={24} />
               <span>Morning routine for productivity</span>
             </button>
-            <button onClick={() => sendMessage("Count the number of items in an image")}>
+            <button onClick={() => sendMessage("Count the number of items in an image")} className="suggestion-button">
               <Eye className="suggestion-icon" size={24} />
               <span>Count the number of items in an image</span>
             </button>
@@ -254,53 +256,26 @@ const SmartSearch = ({ onLoadChat }) => {
         )}
       </main>
 
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          backgroundColor: '#f5f5f5',
-          borderRadius: '20px',
-          padding: '0 6px',
-          marginTop: '10px',
-          height: '40px'
-        }}
-      >
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyPress={(e) => e.key === 'Enter' && sendMessage(input)}
-          placeholder="Ask Anything!"
-          style={{
-            flex: 1,
-            border: 'none',
-            backgroundColor: 'transparent',
-            outline: 'none',
-            height: '32px',
-            padding: '0 8px',
-            fontSize: '16px'
-          }}
-          disabled={isLoading}
-        />
-        <VoicePrompt onTranscript={sendMessage} disabled={isLoading} />
-        <button
-          onClick={() => sendMessage(input)}
-          disabled={isLoading}
-          style={{
-            border: 'none',
-            background: 'none',
-            width: '28px',
-            height: '28px',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            cursor: isLoading ? 'not-allowed' : 'pointer',
-            opacity: isLoading ? 0.5 : 1,
-            padding: 0
-          }}
-        >
-          <Send size={18} />
-        </button>
+      <div className="chat-input-container">
+        <div className="input-with-buttons">
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyPress={(e) => e.key === 'Enter' && sendMessage(input)}
+            placeholder="Ask Anything!"
+            className="message-input"
+            disabled={isLoading}
+          />
+          <VoicePrompt onTranscript={sendMessage} disabled={isLoading} />
+          <button
+            onClick={() => sendMessage(input)}
+            disabled={isLoading}
+            className="send-button"
+          >
+            <Send size={18} />
+          </button>
+        </div>
       </div>
     </div>
   );

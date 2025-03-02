@@ -17,6 +17,7 @@ body, html {
   flex-direction: column;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .chat-header {
@@ -59,14 +60,26 @@ body, html {
   color: black;
 }
 
+/* Chat Messages */
 .chat-main {
-  flex: 1;
+  flex-grow: 1;
   overflow-y: auto;
   padding-right: 10px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 70px; /* Add space for the input bar */
 }
 
+/* Hide scrollbar */
+.chat-main::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-main {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Suggestions */
 .suggestion-buttons {
   display: flex;
   flex-direction: column;
@@ -99,6 +112,7 @@ body, html {
   gap: 16px;
 }
 
+/* User and Bot Messages */
 .message {
   max-width: 85%;
   padding: 15px;
@@ -134,61 +148,81 @@ body, html {
   margin-top: 8px;
 }
 
-/* We're removing the chat-input and message-input styles since we're using inline styles */
-/* If you decide to switch back to CSS classes later, you can uncomment these */
-/*
-.chat-input {
+/* Input Container with Gray Background */
+.input-with-buttons {
   display: flex;
   align-items: center;
   background-color: #f5f5f5;
   border-radius: 20px;
-  padding: 0 6px;
-  margin-top: 10px;
+  padding: 0 8px;
+  width: 100%;
   height: 40px;
 }
 
+/* Chat Input Container */
+.chat-input-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 760px; /* Slightly less than chat-container to account for padding */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-top: 1px solid #ddd;
+  z-index: 10;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Input Field */
 .message-input {
   flex: 1;
   border: none;
-  background-color: transparent;
+  background-color: transparent; /* Make the input transparent to show the container's background */
   outline: none;
-  height: 32px;
+  height: 36px;
   padding: 0 8px;
   font-size: 16px;
 }
 
+/* Send Button */
 .send-button {
   color: #000000;
   border: none;
   background: none;
-  width: 28px;
-  height: 28px;
+  margin-left: 4px;
+  width: 32px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
   flex-shrink: 0;
+  padding: 0;
 }
 
 .send-button:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
-*/
 
+/* Voice Input Button */
 .voice-prompt {
   display: flex;
   align-items: center;
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
-/* Remove scrollbar styles */
-.chat-main::-webkit-scrollbar {
-  display: none;
-}
-
-.chat-main {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Code blocks */
+.code-block {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: monospace;
+  margin: 10px 0;
 }
