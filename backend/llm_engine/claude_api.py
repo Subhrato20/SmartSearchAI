@@ -27,12 +27,12 @@ def get_alternatives():
     if not query:
         return jsonify({"error": "Missing 'query' in request body"}), 400
     
-    ################### REMOVE ###################
-    return jsonify({
-        "content": "If you're looking for sports and news TV package alternatives in Philadelphia, here are some options compared to Xfinity:\n\n## Alternatives\n\n1. **Hulu + Live TV**\n   - **Price**: $82.99/month\n   - **Pros**: Offers a wide range of sports channels (ESPN, Fox Sports, NFL Network), local channels, and includes ESPN Plus.\n   - **Cons**: Expensive, lacks regional sports networks like Bally Sports.\n\n2. **Sling TV**\n   - **Price**: $40-$45/month (Orange/Blue plans)\n   - **Pros**: Affordable, customizable with add-ons, includes ESPN and some local channels.\n   - **Cons**: Limited local channel availability, no regional sports networks.\n\n3. **Fubo**\n   - **Price**: $70-$110/month\n   - **Pros**: Comprehensive sports coverage, includes international sports and local channels.\n   - **Cons**: Expensive, navigation can be clunky.\n\n4. **Philo**\n   - **Price**: $28/month\n   - **Pros**: Inexpensive, includes AMC+, no sports or local channels.\n   - **Cons**: Not suitable for sports or news enthusiasts.\n\n## Xfinity Advantage\n- **Price**: Varies by package, but generally competitive with more comprehensive channel options.\n- **Pros**: Offers a wide range of sports and news channels, including local and regional networks, with robust DVR capabilities.\n- **Cons**: Pricing can vary significantly based on location and package.\n\nXfinity provides a more comprehensive package with local and regional sports networks, making it a strong choice for those seeking a full sports and news experience in Philadelphia.",
-        "role": "assistant"
-    })
-    ################### REMOVE ###################
+    # ################### REMOVE ###################
+    # return jsonify({
+    #     "content": "If you're looking for sports and news TV package alternatives in Philadelphia, here are some options compared to Xfinity:\n\n## Alternatives\n\n1. **Hulu + Live TV**\n   - **Price**: $82.99/month\n   - **Pros**: Offers a wide range of sports channels (ESPN, Fox Sports, NFL Network), local channels, and includes ESPN Plus.\n   - **Cons**: Expensive, lacks regional sports networks like Bally Sports.\n\n2. **Sling TV**\n   - **Price**: $40-$45/month (Orange/Blue plans)\n   - **Pros**: Affordable, customizable with add-ons, includes ESPN and some local channels.\n   - **Cons**: Limited local channel availability, no regional sports networks.\n\n3. **Fubo**\n   - **Price**: $70-$110/month\n   - **Pros**: Comprehensive sports coverage, includes international sports and local channels.\n   - **Cons**: Expensive, navigation can be clunky.\n\n4. **Philo**\n   - **Price**: $28/month\n   - **Pros**: Inexpensive, includes AMC+, no sports or local channels.\n   - **Cons**: Not suitable for sports or news enthusiasts.\n\n## Xfinity Advantage\n- **Price**: Varies by package, but generally competitive with more comprehensive channel options.\n- **Pros**: Offers a wide range of sports and news channels, including local and regional networks, with robust DVR capabilities.\n- **Cons**: Pricing can vary significantly based on location and package.\n\nXfinity provides a more comprehensive package with local and regional sports networks, making it a strong choice for those seeking a full sports and news experience in Philadelphia.",
+    #     "role": "assistant"
+    # })
+    # ################### REMOVE ###################
     
     response = get_perplexity_response(query)
     return jsonify(response)
@@ -45,25 +45,25 @@ def get_product_suggestions():
     if not question:
         return jsonify({"error": "Missing 'question' in request body"}), 400
     
-    ################### REMOVE ###################
-    return jsonify({
-        "ai_salesman_response": "dummy text here",
-        "product_items": [
-            {
-                "product_link": "https://www.xfinity.com/learn/digital-cable-tv/sports-news",
-                "product_name": "Sports & News TV Package"
-            },
-            {
-                "product_link": "https://www.xfinity.com/learn/digital-cable-tv/add-channels",
-                "product_name": "Sports Add-on Packages"
-            },
-            {
-                "product_link": "https://www.xfinity.com/learn/digital-cable-tv/sports-news",
-                "product_name": "TV + Internet + Mobile Bundle"
-            }
-        ]
-    })
-    ################### REMOVE ###################
+    # ################### REMOVE ###################
+    # return jsonify({
+    #     "ai_salesman_response": "If you're looking for sports and news TV package alternatives in Philadelphia, here are some options compared to Xfinity:\n\n## Alternatives\n\n1. **Hulu + Live TV**\n   - **Price**: $82.99/month\n   - **Pros**: Offers a wide range of sports channels (ESPN, Fox Sports, NFL Network), local channels, and includes ESPN Plus.\n   - **Cons**: Expensive, lacks regional sports networks like Bally Sports.\n\n2. **Sling TV**\n   - **Price**: $40-$45/month (Orange/Blue plans)\n   - **Pros**: Affordable, customizable with add-ons, includes ESPN and some local channels.\n   - **Cons**: Limited local channel availability, no regional sports networks.\n\n3. **Fubo**\n   - **Price**: $70-$110/month\n   - **Pros**: Comprehensive sports coverage, includes international sports and local channels.\n   - **Cons**: Expensive, navigation can be clunky.\n\n4. **Philo**\n   - **Price**: $28/month\n   - **Pros**: Inexpensive, includes AMC+, no sports or local channels.\n   - **Cons**: Not suitable for sports or news enthusiasts.\n\n## Xfinity Advantage\n- **Price**: Varies by package, but generally competitive with more comprehensive channel options.\n- **Pros**: Offers a wide range of sports and news channels, including local and regional networks, with robust DVR capabilities.\n- **Cons**: Pricing can vary significantly based on location and package.\n\nXfinity provides a more comprehensive package with local and regional sports networks, making it a strong choice for those seeking a full sports and news experience in Philadelphia.",
+    #     "product_items": [
+    #         {
+    #             "product_link": "https://www.xfinity.com/learn/digital-cable-tv/sports-news",
+    #             "product_name": "Sports & News TV Package"
+    #         },
+    #         {
+    #             "product_link": "https://www.xfinity.com/learn/digital-cable-tv/add-channels",
+    #             "product_name": "Sports Add-on Packages"
+    #         },
+    #         {
+    #             "product_link": "https://www.xfinity.com/learn/digital-cable-tv/sports-news",
+    #             "product_name": "TV + Internet + Mobile Bundle"
+    #         }
+    #     ]
+    # })
+    # ################### REMOVE ###################
     
     context = load_context(question)
     

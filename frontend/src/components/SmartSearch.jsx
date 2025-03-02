@@ -5,6 +5,7 @@ import './SmartSearch.css';
 import Card from './Card';
 import VoicePrompt from './VoicePrompt';
 
+
 function mapProductItemsToCardSources(productItems) {
   return productItems.map((item, index) => {
     const domain = new URL(item.product_link).hostname;
