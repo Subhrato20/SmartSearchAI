@@ -148,6 +148,7 @@ body, html {
 
 .bot-text {
   margin-top: 8px;
+  margin-bottom: 12px; /* Add space below the text */
 }
 
 /* Input Container with Gray Background */
@@ -225,4 +226,34 @@ body, html {
   overflow-x: auto;
   font-family: monospace;
   margin: 10px 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  body, html {
+    font-size: 14px; /* Reduce base font size */
+  }
+
+  .chat-header h1 {
+    font-size: 1.8rem; /* Reduce header font size */
+  }
+
+  .message {
+    padding: 8px 10px; /* Slightly reduce padding */
+    font-size: 0.9rem; /* Reduce message font size */
+  }
+
+  .suggestion-button {
+    padding: 12px; /* Adjust padding */
+    font-size: 0.9rem; /* Reduce suggestion font size */
+  }
+
+  .message-input {
+    font-size: 14px; /* Reduce input font size */
+  }
+
+  .refresh-button {
+    width: 35px;
+    height: 35px;
+  }
 }

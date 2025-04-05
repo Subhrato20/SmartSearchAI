@@ -204,7 +204,7 @@ const SmartSearch = ({ onLoadChat }) => {
   return (
     <div className="chat-container">
       <header className="chat-header">
-        <h1>Xfinity SmartSearch.ai</h1>
+        <h1>SmartSearch</h1>
         <button onClick={handleRefresh} className="refresh-button" aria-label="Refresh chat">
           <RefreshCcw size={24} />
         </button>
@@ -215,7 +215,7 @@ const SmartSearch = ({ onLoadChat }) => {
           <div className="suggestion-buttons">
             <button onClick={() => sendMessage("What is the most cost-effective Xfinity Internet plan for a household with four devices?​")} className="suggestion-button">
               <Zap className="suggestion-icon" size={24} />
-              <span>What is the most cost-effective Xfinity Internet plan for a household with four devices?​</span>
+              <span>What is the most cost-effective Xfinity Internet plan for a household with four devices?</span>
             </button>
             <button onClick={() => sendMessage("What are the differences between Xfinity's xFi Gateway and standard modems, and which is more suitable for high-speed Internet?")} className="suggestion-button">
               <Sun className="suggestion-icon" size={24} />
@@ -237,17 +237,17 @@ const SmartSearch = ({ onLoadChat }) => {
                   formatMessage(message.text)
                 ) : (
                   <div className="bot-message-content">
-                    {message.sources && message.sources.length > 0 && (
-                      <div className="sources-wrapper">
-                        <Card sources={message.sources} />
-                      </div>
-                    )}
-
                     <div className="bot-text">
                       {index === messages.length - 1
                         ? formatMessage(displayedText)
                         : formatMessage(message.text)}
                     </div>
+
+                    {message.sources && message.sources.length > 0 && (
+                      <div className="sources-wrapper">
+                        <Card sources={message.sources} />
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
