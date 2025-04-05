@@ -29,7 +29,7 @@ const SmartSearch = ({ onLoadChat }) => {
   const [chatId, setChatId] = useState(() => Date.now().toString());
 
   const chatMainRef = useRef(null);
-  const API_BASE_URL = 'http://127.0.0.1:5000/get_product_suggestions';
+  const API_BASE_URL = 'http://127.0.0.1:8080/get_product_suggestions';
 
   useEffect(() => {
     // Save chat to localStorage

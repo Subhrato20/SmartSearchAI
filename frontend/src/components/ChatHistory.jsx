@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { X } from 'lucide-react'; // Import X icon
 import './ChatHistory.css';
 
-const ChatHistory = ({ onSelectChat }) => {
+const ChatHistory = ({ onSelectChat, onClose }) => { // Add onClose prop
   const [chats, setChats] = useState([]);
   const [activeChat, setActiveChat] = useState(null);
 
@@ -53,8 +54,14 @@ const ChatHistory = ({ onSelectChat }) => {
 
   return (
     <div className="chat-history">
-      <h2>Chat History</h2>
-      
+      <div className="chat-history-header"> {/* Added header container */}
+        <h2>Chat History</h2>
+        {/* Close button - visible only on mobile via CSS */}
+        <button onClick={onClose} className="close-history-button" aria-label="Close chat history">
+          <X size={20} />
+        </button>
+      </div>
+
       <div className="chat-list">
         {chats.length === 0 ? (
           <div className="no-chats">No chat history</div>
