@@ -22,11 +22,10 @@
 
 .voice-icon-container {
   position: relative;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* Removed fixed size and flex centering */
+  /* Let the container size itself based on the icon */
+  display: inline-block; /* Ensure it behaves like an inline element */
+  vertical-align: middle; /* Align vertically with text/other icons */
 }
 
 .mic-icon {

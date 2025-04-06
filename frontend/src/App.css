@@ -1,0 +1,88 @@
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ffffff; /* Changed background to white */
+  position: relative; /* Needed for absolute positioning of children */
+}
+
+.chat-history-container {
+  width: 300px;
+  flex-shrink: 0;
+  border-right: 1px solid #d1d5db;
+  background-color: #ffffff;
+  height: 100%;
+  overflow-y: auto;
+  transition: transform 0.3s ease; /* Add transition for smooth slide */
+  z-index: 100; /* Ensure it's above the overlay */
+}
+
+.smart-search-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 101; /* Above history panel */
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Overlay for closing history panel */
+.history-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99; /* Below history panel, above content */
+}
+
+
+/* Media Query for smaller screens (e.g., tablets and phones) */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex; /* Show button on small screens */
+  }
+
+  .chat-history-container {
+    position: absolute; /* Position as overlay */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px; /* Or desired width for sidebar */
+    max-width: 80%; /* Limit width on very small screens */
+    border-right: 1px solid #d1d5db;
+    transform: translateX(-100%); /* Hide off-screen by default */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+
+  .chat-history-container.visible {
+    transform: translateX(0); /* Slide in when visible */
+  }
+
+  /* The overlay's display is handled by React's conditional rendering */
+
+
+  /* Adjust smart search container if needed, e.g., ensure it doesn't get pushed */
+  .smart-search-container {
+    width: 100%; /* Ensure it takes full width */
+  }
+}

@@ -15,7 +15,7 @@ const Card = ({ sources }) => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/get_alternatives', { query: url });
+      const response = await axios.post('http://127.0.0.1:8080/get_alternatives', { query: url });
       setPopupContent(response.data.content || "No additional data available.");
     } catch (error) {
       console.error("Error fetching additional data:", error);
