@@ -19,6 +19,10 @@ def load_context(question: str):
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/hello', methods=['GET'])
+def hello():
+    return jsonify({"message": "Hello from Xfinity AI backend!"}), 200
+
 @app.route('/get_alternatives', methods=['POST'])
 def get_alternatives():
     data = request.json
