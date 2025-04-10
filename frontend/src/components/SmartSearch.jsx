@@ -29,7 +29,7 @@ const SmartSearch = ({ onLoadChat }) => {
   const [chatId, setChatId] = useState(() => Date.now().toString());
 
   const chatMainRef = useRef(null);
-  const API_BASE_URL = 'http://127.0.0.1:8080/get_product_suggestions';
+  const API_BASE_URL = 'http://18.217.74.171:8080/get_product_suggestions';
 
   useEffect(() => {
     // Save chat to localStorage
@@ -204,7 +204,7 @@ const SmartSearch = ({ onLoadChat }) => {
   return (
     <div className="chat-container">
       <header className="chat-header">
-        <h1>SmartSearch</h1>
+        <h1>SmartSearch.ai</h1>
         <button onClick={handleRefresh} className="refresh-button" aria-label="Refresh chat">
           <RefreshCcw size={24} />
         </button>
@@ -237,17 +237,18 @@ const SmartSearch = ({ onLoadChat }) => {
                   formatMessage(message.text)
                 ) : (
                   <div className="bot-message-content">
+                      {message.sources && message.sources.length > 0 && (
+                      <div className="sources-wrapper">
+                        <Card sources={message.sources} />
+                      </div>
+                    )}
                     <div className="bot-text">
                       {index === messages.length - 1
                         ? formatMessage(displayedText)
                         : formatMessage(message.text)}
                     </div>
 
-                    {message.sources && message.sources.length > 0 && (
-                      <div className="sources-wrapper">
-                        <Card sources={message.sources} />
-                      </div>
-                    )}
+
                   </div>
                 )}
               </div>
