@@ -2,6 +2,7 @@
 
 <h1 align="center">SMARTSEARCHAI</h1>
 <h3 align="center">Discover Tailored Services, Empower Your Choices Today</h3>
+<h3 align="center"><a href="https://deepwiki.com/Subhrato20/SmartSearchAI"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a></h3>
 
 **Personalized service bundle recommendations—powered by AI, not guesswork.**
 
